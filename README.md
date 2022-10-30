@@ -18,4 +18,4 @@ When you run the above .py file, you will get such kind of output. Enter any URL
 
 
 
-**Note**: This application will only run until you’re connected to the internet. As it needs to fetch APIs; It will not work offline.
+**Note**: This application will only run until you’re connected to the internet. As it needs to fetch APIs; It will not work in offline mode.
