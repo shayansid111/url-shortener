@@ -1,15 +1,16 @@
 # Importing all the libraries
-from tkinter import *
-import tkinter.messagebox as tkmsg
-import PIL
-from PIL import ImageTk
+from tkinter import *  # Provides the tools to create a GUI.
+import tkinter.messagebox as tkmsg  #Module in tkinter for creating message boxes.
+import PIL   #Python Imaging Library, used for opening, manipulating, and displaying images in the GUI.
+from PIL import ImageTk   
 from PIL import Image
-from tkinter import filedialog
-import pyshorteners
-import clipboard
+from tkinter import filedialog #A module to open file dialogs in the application.
+import pyshorteners #Pyshorteners is a Python library that helps you shorten URLs using the most famous URL Shorteners available.
+import clipboard #Used to interact with the clipboard for copying the shortened URL
 
 
 # Function to short URL
+#When the user inputs a URL and presses the "Shorten URL" button, the convert() function is triggered.
 def convert():
     s = pyshorteners.Shortener().tinyurl.short(url.get())
 
@@ -55,4 +56,4 @@ short.place(x=8, y=325)
 
 Button(root, text="Shorten URL", bg="#F8C471", fg="#1e1e1e", font="poppins 11 bold", command=convert, relief=GROOVE).place(x=8, y=220)
 
-root.mainloop()
+root.mainloop()#This keeps the GUI window open and responsive, waiting for user interaction.
